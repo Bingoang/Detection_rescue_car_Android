@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Acar</string>
+    <string name="system_title">探测救援智能小车系统</string>
+    <string name="action_settings">Settings</string>
+    <string name="configuration">配置</string>
+    <string name="connect">连接</string>
+    <string name="connectjinru">连接进入控制界面</string>
+    <string name="temperature">温度：</string>
+    <string name="mywendu">23℃</string>
+    <string name="light_auto">灯是否已经自启动</string>
+    <string name="light_force">是否手动打开灯</string>
+    <string name="travel_distance">行驶距离</string>
+    <string name="human_search">是否探测到人体红外</string>
+
+    
+    <string name="syetem_indro">  智能小车作为机器人的典型代表，需要实现自动引导功能和避障功能就必须要感知导引线和障碍物，
+        实现自动识别路线，选择正确的行进路线，使用传感器感知路线并做出判断和相应的执行动作。智能小车设计与开发设计控制，模式识别，传感技术，
+        汽车电子，电气，计算机，机械等多个学科，它可以分为三大部分：传感器检测部分，执行部分，CPU。智能小车是一个集环境感知、规划决策
+        ，自动行驶等功能于一体的综合系统，它集中地运用了计算机、传感、信息、通信、导航、人工智能及自动控制等技术，
+        是典型的高新技术综合体。智能化作为现代社会的新产物，是以后的发展方向，他可以按照预先设定的模式在一个特定的环境里自动的运作，
+        无需人为管理，便可以完成预期所要达到的或是更高的目标。</string>
+    <string name="team">团队成员：向贵军、 王佳雯、李轩昂、严小燕</string>
+</resources>

@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <com.app.acar.MyServiceView
+        android:id="@+id/test2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <TextView
+        android:id="@+id/qianfangzhangaiwu"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_alignLeft="@+id/dangqianshidu"
+        android:layout_alignParentTop="true"
+        android:text="距前方障碍物(cm):"
+        android:textColor="#fcfcfc"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/dangqianwendu"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/dangqianjuli"
+        android:layout_marginLeft="18dp"
+        android:textColor="#fcfcfc"
+        android:text="当前温度T(℃)："
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/dangqianjuli"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_alignLeft="@+id/dangqianwendu"
+        android:layout_below="@+id/qianfangzhangaiwu"
+        android:text="行驶距离D(cm)"
+        android:textColor="#fcfcfc"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/dangqianshidu"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_alignLeft="@+id/dangqianwendu"
+        android:layout_below="@+id/dangqianwendu"
+        android:text="当前湿度R(%):"
+        android:textColor="#fcfcfc"
+        android:textSize="18sp" />
+    
+
+    <TextView
+        android:id="@+id/juli"
+        android:layout_width="120dp"
+        android:layout_height="25dp"
+        android:layout_above="@+id/dangqianwendu"
+        android:textSize="18sp"
+        android:textColor="#fcfcfc"
+        android:layout_alignLeft="@+id/zhangaiwu"
+        android:text=" " />
+
+
+    <TextView
+        android:id="@+id/zhangaiwu"
+        android:layout_width="120dp"
+        android:layout_height="25dp"
+        android:layout_above="@+id/juli"
+        android:layout_toRightOf="@+id/qianfangzhangaiwu"
+        android:text=""
+        android:textColor="#fcfcfc"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/voiceshibie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:textColor="#fcfcfc"
+        android:text="点我语音" />
+
+    <TextView
+        android:id="@+id/wendu"
+        android:layout_width="120dp"
+        android:layout_height="25dp"
+        android:layout_above="@+id/dangqianshidu"
+        android:layout_alignLeft="@+id/juli"
+        android:text=""
+        android:textColor="#fcfcfc"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/shidu"
+        android:layout_width="120dp"
+        android:layout_height="25dp"
+        android:layout_alignBaseline="@+id/dangqianshidu"
+        android:layout_alignBottom="@+id/dangqianshidu"
+        android:layout_toRightOf="@+id/qianfangzhangaiwu"
+        android:text=""
+        android:textColor="#fcfcfc"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/shengmingjiance"
+        android:layout_width="100dp"
+        android:layout_height="25dp"
+        android:layout_alignLeft="@+id/dangqianshidu"
+        android:layout_alignRight="@+id/dangqianjuli"
+        android:layout_below="@+id/dangqianshidu"
+        android:layout_marginTop="5dp"
+        android:text="没有检测到生命"
+        android:textColor="#fcfcfc"
+        android:textSize="15sp" />
+
+    <RadioButton
+        android:id="@+id/connect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:text="连接"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/forward"
+        android:layout_width="wrap_content"
+        android:textColor="#fcfcfc"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/dangqianshidu"
+        android:layout_below="@+id/shengmingjiance"
+        android:text="前进" />
+
+    <Button
+        android:id="@+id/left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/forward"
+        android:layout_toLeftOf="@+id/forward"
+        android:text="左转"
+        android:textColor="#fcfcfc" />
+
+    <Button
+        android:id="@+id/stop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/left"
+        android:layout_alignBottom="@+id/left"
+        android:layout_alignLeft="@+id/forward"
+        android:text="停止"
+        android:textColor="#fcfcfc" />
+
+    <Button
+        android:id="@+id/right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/stop"
+        android:layout_alignBottom="@+id/stop"
+        android:layout_toRightOf="@+id/stop"
+        android:text="右转"
+        android:textColor="#fcfcfc" />
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/left"
+        android:layout_toRightOf="@+id/left"
+        android:text="后退"
+        android:textColor="#fcfcfc" />
+
+    <Button
+        android:id="@+id/tanzhaodeng"
+        android:textColor="#fcfcfc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="探照灯" />
+
+    <TextView
+        android:id="@+id/voice_order"
+        android:textColor="#fcfcfc"
+        android:textSize="12sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tanzhaodeng"
+        android:layout_alignBottom="@+id/tanzhaodeng"
+        android:layout_toLeftOf="@+id/voiceshibie"
+        android:text="" />
+
+</RelativeLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <com.app.acar.MyServiceView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_weight="0.35" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:orientation="vertical" >
+
+        <ListView
+            android:id="@+id/list1"
+            android:layout_width="fill_parent"
+            android:layout_height="130dp"
+            android:layout_weight="12704.49" >
+        </ListView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_weight="0.06"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/yuyinkongzhi"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="点我语音控制" />
+
+    </LinearLayout>
+
+</LinearLayout>
